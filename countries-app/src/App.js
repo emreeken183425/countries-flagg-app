@@ -11,21 +11,25 @@ function App() {
 
   console.log(countries);
   return (
-    <div className="App">
-      <h1>merhaba</h1>
+    <div className="App d-flex flex-wrap justify-content-center align-items-center ">
+      <h1>COUNTRİES</h1>
       {countries.map((country) => {
         return (
           
             
               
-              <div key={country.name} className="card-body">
-              <img
-                src={country.flag}
-                className=" image card-img-top  "
-                alt={country.name}
-              />
-                <h5 className="card-title">{country.name}</h5>
-                <h5> {country.capital} </h5>
+              <div key={country.name} className=" container row d-flex justify-content-center align-items-center mt-5 mx-auto">
+                <div className="col-md-8 d-flex  ">
+                  <img className="w-50 mw-75 rounded card-img-top " src={country.flag} alt={country.name} />
+               
+                 <div>
+                 <h1>Country:{country.name} </h1>
+                 </div>
+                 
+                 <div>
+                 <h2>Capital:{country.capital} </h2>
+                 </div>
+                </div>
               </div>
             
           
