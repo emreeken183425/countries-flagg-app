@@ -1,4 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-
+.map{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
